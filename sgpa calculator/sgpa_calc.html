@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="./sgpa_calc.js"></script>
+    <meta charset="UTF-8">
+    <title>CGPA CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <form onsubmit="validate()">
+
+        <!-- <label id="l1">Calculate Your SGPA</label><br> -->
+        <br>
+        <!-- automate this repeatation, too lazy to do it today -->
+        <div class="container">
+            <div class="brand-logo"></div>
+            <div class="brand-title">Calculate Your CGPA</div>
+            <div class="inputs">
+
+                <p>Enter Your Marks for 50</p>
+                <input id="i1" type="number" placeholder="Maths" step="1" max="50" min="0" required
+                    onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"><br>
+                <!-- <label>Physics</label> -->
+                <input id="i2" type="number" placeholder="Physics" step="1" max="50" min="0" required
+                    onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"><br>
+                <!-- <label>Electrical</label> -->
+                <input id="i3" type="number" placeholder="Electrical" step="1" max="50" min="0" required
+                    onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"><br>
+                <!-- <label>CAED</label> -->
+                <input id="i4" type="number" placeholder="CAED" step="1" max="50" min="0" required
+                    onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"><br>
+                <!-- <label>Civil</label> -->
+                <input id="i5" type="number" placeholder="Civil" step="1" max="50" min="0" required
+                    onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"><br>
+                <!-- <label>Physics Lab</label> -->
+                <input id="i6" type="number" placeholder="PhysicsLab" step="1" max="50" min="0" required
+                    onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"><br>
+                <!-- <label>English</label> -->
+                <input id="i7" type="number" placeholder="English" step="1" max="50" min="0" required
+                    onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"><br>
+                <!-- <label>Design Thinking</label> -->
+                <input id="i8" type="number" placeholder="Design Thinking" step="1" max="50" min="0" required
+                    onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57">
+                <br>
+                <button id="s1" type="submit">Submit</button>
+                <!-- <button id="s1" type="submit" type="button" onclick= submit>Try it</button> -->
+            </div>
+            <a href="https://githubhosting.github.io/404page/">MADE BY <b>Amit</b> and <b>Shravan</b></a>
+        </div>
+    </form>
+</body>
+
+</html>
